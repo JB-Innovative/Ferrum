@@ -1,6 +1,19 @@
 [package]
 name = "ferrum_shell"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
+description = "Die ausführbare Desktop-Anwendung (Iced) für den Ferrum Browser."
 
 [dependencies]
+iced.workspace = true
+iced.features = [
+    "tokio",
+    "image",
+    "qr_code",
+    "wgpu"
+]
+
+tokio = { version = "1.37", features = ["macros", "rt-multi-thread"] }
+
+log = "0.4.28"
+env_logger = "0.11"
