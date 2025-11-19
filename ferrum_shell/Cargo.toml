@@ -2,13 +2,15 @@
 name = "ferrum_shell"
 version = "0.1.0"
 edition = "2021"
-description = "Die ausführbare Desktop-Anwendung (Iced) für den Ferrum Browser."
 
 [dependencies]
-tokio = { version = "1.37", features = ["macros", "rt-multi-thread"] }
-reqwest = { version = "0.12", features = ["json", "rustls-tls"], default-features = false }
-url = "2.5"
-scraper = "0.19"
+wry = "0.53.5"
+tao = "0.34.5"
+gtk = "0.18.2"
 
-log = "0.4.28"
+reqwest = { version = "0.12", features = ["rustls-tls"] }
+tokio = { version = "1", features = ["full"] }
+
+# Logging
+log = "0.4"
 env_logger = "0.11"
