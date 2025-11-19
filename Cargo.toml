@@ -1,0 +1,12 @@
+[workspace]
+members = [
+    "ferrum_core",
+    "ferrum_desktop",
+    "servo"
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Johannes Breitenbach"]
+license = "MIT"
