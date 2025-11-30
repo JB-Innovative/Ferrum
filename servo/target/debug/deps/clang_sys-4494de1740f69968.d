@@ -1,0 +1,14 @@
+/home/Creativity/RustroverProjects/Ferrum/servo/target/debug/deps/clang_sys-4494de1740f69968.d: /home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/lib.rs /home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/support.rs /home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/link.rs /home/Creativity/RustroverProjects/Ferrum/servo/target/debug/build/clang-sys-68b4592a48e115d1/out/macros.rs /home/Creativity/RustroverProjects/Ferrum/servo/target/debug/build/clang-sys-68b4592a48e115d1/out/common.rs /home/Creativity/RustroverProjects/Ferrum/servo/target/debug/build/clang-sys-68b4592a48e115d1/out/dynamic.rs
+
+/home/Creativity/RustroverProjects/Ferrum/servo/target/debug/deps/libclang_sys-4494de1740f69968.rlib: /home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/lib.rs /home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/support.rs /home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/link.rs /home/Creativity/RustroverProjects/Ferrum/servo/target/debug/build/clang-sys-68b4592a48e115d1/out/macros.rs /home/Creativity/RustroverProjects/Ferrum/servo/target/debug/build/clang-sys-68b4592a48e115d1/out/common.rs /home/Creativity/RustroverProjects/Ferrum/servo/target/debug/build/clang-sys-68b4592a48e115d1/out/dynamic.rs
+
+/home/Creativity/RustroverProjects/Ferrum/servo/target/debug/deps/libclang_sys-4494de1740f69968.rmeta: /home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/lib.rs /home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/support.rs /home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/link.rs /home/Creativity/RustroverProjects/Ferrum/servo/target/debug/build/clang-sys-68b4592a48e115d1/out/macros.rs /home/Creativity/RustroverProjects/Ferrum/servo/target/debug/build/clang-sys-68b4592a48e115d1/out/common.rs /home/Creativity/RustroverProjects/Ferrum/servo/target/debug/build/clang-sys-68b4592a48e115d1/out/dynamic.rs
+
+/home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/lib.rs:
+/home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/support.rs:
+/home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/clang-sys-1.8.1/src/link.rs:
+/home/Creativity/RustroverProjects/Ferrum/servo/target/debug/build/clang-sys-68b4592a48e115d1/out/macros.rs:
+/home/Creativity/RustroverProjects/Ferrum/servo/target/debug/build/clang-sys-68b4592a48e115d1/out/common.rs:
+/home/Creativity/RustroverProjects/Ferrum/servo/target/debug/build/clang-sys-68b4592a48e115d1/out/dynamic.rs:
+
+# env-dep:OUT_DIR=/home/Creativity/RustroverProjects/Ferrum/servo/target/debug/build/clang-sys-68b4592a48e115d1/out

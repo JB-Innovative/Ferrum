@@ -1,9 +1,13 @@
 [workspace]
+name = "ferrum"
 members = [
     "ferrum_core",
-    "ferrum_desktop",
-    "servo"
+    "ferrum_desktop"
 ]
+resolver = "2"
+
+[workspace.dependencies]
+ferrum_core = { version = "0.1.0", path = "ferrum_core"}
 
 [workspace.package]
 version = "0.1.0"

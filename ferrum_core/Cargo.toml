@@ -1,9 +1,8 @@
 [package]
 name = "ferrum_core"
-version.workspace = true
-edition.workspace = true
-authors.workspace = true
-license.workspace = true
+edition = "2021"
+version = "0.1.0"
+
 
 [dependencies]
 rusqlite = { version = "0.37.0", features = ["bundled"] }

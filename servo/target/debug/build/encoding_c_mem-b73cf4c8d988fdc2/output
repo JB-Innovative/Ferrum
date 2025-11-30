@@ -1,0 +1,2 @@
+cargo:rerun-if-changed=
+cargo:include-dir=/home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/encoding_c_mem-0.2.6/include

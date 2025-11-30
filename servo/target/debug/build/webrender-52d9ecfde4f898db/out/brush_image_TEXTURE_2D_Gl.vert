@@ -1,0 +1,220 @@
+#version 150
+// brush_image
+// features: ["TEXTURE_2D"]
+
+uniform mat4 uTransform;
+in vec2 aPosition;
+uniform sampler2D sColor0;
+uniform sampler2D sRenderTasks;
+uniform sampler2D sGpuCache;
+flat out vec4 vTransformBounds;
+uniform sampler2D sTransformPalette;
+uniform sampler2D sPrimitiveHeadersF;
+uniform isampler2D sPrimitiveHeadersI;
+in ivec4 aData;
+out vec2 v_uv;
+flat out vec4 v_uv_bounds;
+flat out vec4 v_uv_sample_bounds;
+flat out vec2 v_perspective;
+void main ()
+{
+  int instance_segment_index_1;
+  int instance_flags_2;
+  int instance_resource_address_3;
+  instance_segment_index_1 = (aData.z & 65535);
+  instance_flags_2 = (aData.z >> 16);
+  instance_resource_address_3 = (aData.w & 16777215);
+  float ph_z_4;
+  ivec2 tmpvar_5;
+  tmpvar_5.x = int((2u * (
+    uint(aData.x)
+   % 512u)));
+  tmpvar_5.y = int((uint(aData.x) / 512u));
+  vec4 tmpvar_6;
+  tmpvar_6 = texelFetchOffset (sPrimitiveHeadersF, tmpvar_5, 0, ivec2(0, 0));
+  vec4 tmpvar_7;
+  tmpvar_7 = texelFetchOffset (sPrimitiveHeadersF, tmpvar_5, 0, ivec2(1, 0));
+  vec2 tmpvar_8;
+  vec2 tmpvar_9;
+  tmpvar_8 = tmpvar_6.xy;
+  tmpvar_9 = tmpvar_6.zw;
+  ivec2 tmpvar_10;
+  tmpvar_10.x = int((2u * (
+    uint(aData.x)
+   % 512u)));
+  tmpvar_10.y = int((uint(aData.x) / 512u));
+  ivec4 tmpvar_11;
+  tmpvar_11 = texelFetchOffset (sPrimitiveHeadersI, tmpvar_10, 0, ivec2(0, 0));
+  ivec4 tmpvar_12;
+  tmpvar_12 = texelFetchOffset (sPrimitiveHeadersI, tmpvar_10, 0, ivec2(1, 0));
+  ph_z_4 = float(tmpvar_11.x);
+  mat4 transform_m_13;
+  bool transform_is_axis_aligned_14;
+  transform_is_axis_aligned_14 = ((tmpvar_11.z >> 23) == 0);
+  int tmpvar_15;
+  tmpvar_15 = (tmpvar_11.z & 8388607);
+  ivec2 tmpvar_16;
+  tmpvar_16.x = int((8u * (
+    uint(tmpvar_15)
+   % 128u)));
+  tmpvar_16.y = int((uint(tmpvar_15) / 128u));
+  transform_m_13[0] = texelFetchOffset (sTransformPalette, tmpvar_16, 0, ivec2(0, 0));
+  transform_m_13[1] = texelFetchOffset (sTransformPalette, tmpvar_16, 0, ivec2(1, 0));
+  transform_m_13[2] = texelFetchOffset (sTransformPalette, tmpvar_16, 0, ivec2(2, 0));
+  transform_m_13[3] = texelFetchOffset (sTransformPalette, tmpvar_16, 0, ivec2(3, 0));
+  ivec2 tmpvar_17;
+  tmpvar_17.x = int((2u * (
+    uint(tmpvar_11.w)
+   % 512u)));
+  tmpvar_17.y = int((uint(tmpvar_11.w) / 512u));
+  vec4 tmpvar_18;
+  tmpvar_18 = texelFetchOffset (sRenderTasks, tmpvar_17, 0, ivec2(0, 0));
+  vec4 tmpvar_19;
+  tmpvar_19 = texelFetchOffset (sRenderTasks, tmpvar_17, 0, ivec2(1, 0));
+  vec2 tmpvar_20;
+  vec2 tmpvar_21;
+  tmpvar_20 = tmpvar_7.xy;
+  tmpvar_21 = tmpvar_7.zw;
+  vec2 adjusted_segment_rect_p0_22;
+  vec2 adjusted_segment_rect_p1_23;
+  vec2 segment_rect_p0_24;
+  vec2 segment_rect_p1_25;
+  vec4 segment_data_26;
+  int tmpvar_27;
+  tmpvar_27 = ((instance_flags_2 >> 12) & 15);
+  int tmpvar_28;
+  tmpvar_28 = (instance_flags_2 & 4095);
+  if ((instance_segment_index_1 == 65535)) {
+    segment_rect_p0_24 = tmpvar_8;
+    segment_rect_p1_25 = tmpvar_9;
+    segment_data_26 = vec4(0.0, 0.0, 0.0, 0.0);
+  } else {
+    int tmpvar_29;
+    tmpvar_29 = ((tmpvar_11.y + 3) + (instance_segment_index_1 * 2));
+    ivec2 tmpvar_30;
+    tmpvar_30.x = int((uint(tmpvar_29) % 1024u));
+    tmpvar_30.y = int((uint(tmpvar_29) / 1024u));
+    vec4 tmpvar_31;
+    tmpvar_31 = texelFetchOffset (sGpuCache, tmpvar_30, 0, ivec2(0, 0));
+    segment_rect_p0_24 = (tmpvar_31.xy + tmpvar_6.xy);
+    segment_rect_p1_25 = (tmpvar_31.zw + tmpvar_6.xy);
+    segment_data_26 = texelFetchOffset (sGpuCache, tmpvar_30, 0, ivec2(1, 0));
+  };
+  adjusted_segment_rect_p0_22 = segment_rect_p0_24;
+  adjusted_segment_rect_p1_23 = segment_rect_p1_25;
+  if ((!(transform_is_axis_aligned_14) || ((tmpvar_28 & 1024) != 0))) {
+    vec2 tmpvar_32;
+    tmpvar_32 = min (max (segment_rect_p0_24, tmpvar_7.xy), tmpvar_7.zw);
+    vec2 tmpvar_33;
+    tmpvar_33 = min (max (segment_rect_p1_25, tmpvar_7.xy), tmpvar_7.zw);
+    bvec4 tmpvar_34;
+    tmpvar_34.x = bool((tmpvar_27 & 1));
+    tmpvar_34.y = bool((tmpvar_27 & 2));
+    tmpvar_34.z = bool((tmpvar_27 & 4));
+    tmpvar_34.w = bool((tmpvar_27 & 8));
+    vec4 tmpvar_35;
+    tmpvar_35.xy = tmpvar_32;
+    tmpvar_35.zw = tmpvar_33;
+    vTransformBounds = mix(vec4(-1e+16, -1e+16, 1e+16, 1e+16), tmpvar_35, bvec4(tmpvar_34));
+    vec4 tmpvar_36;
+    tmpvar_36 = mix(vec4(0.0, 0.0, 0.0, 0.0), vec4(2.0, 2.0, 2.0, 2.0), bvec4(tmpvar_34));
+    adjusted_segment_rect_p0_22 = (tmpvar_32 - tmpvar_36.xy);
+    adjusted_segment_rect_p1_23 = (tmpvar_33 + tmpvar_36.zw);
+    tmpvar_20 = vec2(-1e+16, -1e+16);
+    tmpvar_21 = vec2(1e+16, 1e+16);
+  };
+  vec2 tmpvar_37;
+  tmpvar_37 = min (max (mix (adjusted_segment_rect_p0_22, adjusted_segment_rect_p1_23, aPosition), tmpvar_20), tmpvar_21);
+  vec4 tmpvar_38;
+  tmpvar_38.zw = vec2(0.0, 1.0);
+  tmpvar_38.xy = tmpvar_37;
+  vec4 tmpvar_39;
+  tmpvar_39 = (transform_m_13 * tmpvar_38);
+  vec4 tmpvar_40;
+  tmpvar_40.xy = ((tmpvar_39.xy * tmpvar_19.x) + ((
+    -(tmpvar_19.yz)
+   + tmpvar_18.xy) * tmpvar_39.w));
+  tmpvar_40.z = (ph_z_4 * tmpvar_39.w);
+  tmpvar_40.w = tmpvar_39.w;
+  gl_Position = (uTransform * tmpvar_40);
+  vec2 f_41;
+  vec2 stretch_size_42;
+  vec2 local_rect_p0_43;
+  vec2 local_rect_p1_44;
+  vec2 uv1_45;
+  vec2 uv0_46;
+  ivec2 tmpvar_47;
+  tmpvar_47.x = int((uint(tmpvar_11.y) % 1024u));
+  tmpvar_47.y = int((uint(tmpvar_11.y) / 1024u));
+  vec4 tmpvar_48;
+  tmpvar_48 = texelFetchOffset (sGpuCache, tmpvar_47, 0, ivec2(2, 0));
+  vec2 tmpvar_49;
+  tmpvar_49 = vec2(textureSize (sColor0, 0));
+  ivec2 tmpvar_50;
+  tmpvar_50.x = int((uint(instance_resource_address_3) % 1024u));
+  tmpvar_50.y = int((uint(instance_resource_address_3) / 1024u));
+  vec4 tmpvar_51;
+  tmpvar_51 = texelFetchOffset (sGpuCache, tmpvar_50, 0, ivec2(0, 0));
+  uv0_46 = tmpvar_51.xy;
+  uv1_45 = tmpvar_51.zw;
+  local_rect_p0_43 = tmpvar_8;
+  local_rect_p1_44 = tmpvar_9;
+  stretch_size_42 = tmpvar_48.xy;
+  if ((tmpvar_48.x < 0.0)) {
+    stretch_size_42 = (tmpvar_6.zw - tmpvar_6.xy);
+  };
+  if (((tmpvar_28 & 2) != 0)) {
+    local_rect_p0_43 = segment_rect_p0_24;
+    local_rect_p1_44 = segment_rect_p1_25;
+    stretch_size_42 = (segment_rect_p1_25 - segment_rect_p0_24);
+    if (((tmpvar_28 & 512) != 0)) {
+      vec2 tmpvar_52;
+      tmpvar_52 = (tmpvar_51.zw - tmpvar_51.xy);
+      uv0_46 = (tmpvar_51.xy + (segment_data_26.xy * tmpvar_52));
+      uv1_45 = (tmpvar_51.xy + (segment_data_26.zw * tmpvar_52));
+    };
+  };
+  float tmpvar_53;
+  if (((tmpvar_28 & 1) != 0)) {
+    tmpvar_53 = 1.0;
+  } else {
+    tmpvar_53 = 0.0;
+  };
+  v_perspective.x = tmpvar_53;
+  vec2 tmpvar_54;
+  tmpvar_54 = mix(vec2(1.0, 1.0), tmpvar_49, bvec2(((tmpvar_28 & 2048) != 0)));
+  uv0_46 = (uv0_46 * tmpvar_54);
+  uv1_45 = (uv1_45 * tmpvar_54);
+  vec2 tmpvar_55;
+  tmpvar_55 = min (uv0_46, uv1_45);
+  vec2 tmpvar_56;
+  tmpvar_56 = max (uv0_46, uv1_45);
+  vec4 tmpvar_57;
+  tmpvar_57.xy = (tmpvar_55 + vec2(0.5, 0.5));
+  tmpvar_57.zw = (tmpvar_56 - vec2(0.5, 0.5));
+  v_uv_sample_bounds = (tmpvar_57 / tmpvar_49.xyxy);
+  vec2 tmpvar_58;
+  tmpvar_58 = ((tmpvar_37 - local_rect_p0_43) / (local_rect_p1_44 - local_rect_p0_43));
+  f_41 = tmpvar_58;
+  if ((tmpvar_12.y == 1)) {
+    int tmpvar_59;
+    tmpvar_59 = (instance_resource_address_3 + 2);
+    ivec2 tmpvar_60;
+    tmpvar_60.x = int((uint(tmpvar_59) % 1024u));
+    tmpvar_60.y = int((uint(tmpvar_59) / 1024u));
+    vec4 tmpvar_61;
+    tmpvar_61 = mix (mix (texelFetchOffset (sGpuCache, tmpvar_60, 0, ivec2(0, 0)), texelFetchOffset (sGpuCache, tmpvar_60, 0, ivec2(1, 0)), tmpvar_58.x), mix (texelFetchOffset (sGpuCache, tmpvar_60, 0, ivec2(2, 0)), texelFetchOffset (sGpuCache, tmpvar_60, 0, ivec2(3, 0)), tmpvar_58.x), tmpvar_58.y);
+    f_41 = (tmpvar_61.xy / tmpvar_61.w);
+  };
+  v_uv = (mix (uv0_46, uv1_45, f_41) - tmpvar_55);
+  v_uv = (v_uv * ((local_rect_p1_44 - local_rect_p0_43) / stretch_size_42));
+  v_uv = (v_uv / tmpvar_49);
+  if ((tmpvar_53 == 0.0)) {
+    v_uv = (v_uv * tmpvar_39.w);
+  };
+  vec4 tmpvar_62;
+  tmpvar_62.xy = tmpvar_55;
+  tmpvar_62.zw = tmpvar_56;
+  v_uv_bounds = (tmpvar_62 / tmpvar_49.xyxy);
+}
+

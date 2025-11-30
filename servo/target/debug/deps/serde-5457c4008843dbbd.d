@@ -1,0 +1,14 @@
+/home/Creativity/RustroverProjects/Ferrum/servo/target/debug/deps/serde-5457c4008843dbbd.d: /home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /home/Creativity/RustroverProjects/Ferrum/servo/target/debug/build/serde-0ec479bf6452af1f/out/private.rs
+
+/home/Creativity/RustroverProjects/Ferrum/servo/target/debug/deps/libserde-5457c4008843dbbd.rlib: /home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /home/Creativity/RustroverProjects/Ferrum/servo/target/debug/build/serde-0ec479bf6452af1f/out/private.rs
+
+/home/Creativity/RustroverProjects/Ferrum/servo/target/debug/deps/libserde-5457c4008843dbbd.rmeta: /home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /home/Creativity/RustroverProjects/Ferrum/servo/target/debug/build/serde-0ec479bf6452af1f/out/private.rs
+
+/home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs:
+/home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs:
+/home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs:
+/home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs:
+/home/Creativity/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs:
+/home/Creativity/RustroverProjects/Ferrum/servo/target/debug/build/serde-0ec479bf6452af1f/out/private.rs:
+
+# env-dep:OUT_DIR=/home/Creativity/RustroverProjects/Ferrum/servo/target/debug/build/serde-0ec479bf6452af1f/out

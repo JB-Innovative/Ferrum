@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schema.tauri.app/config/2.0.0",
+  "productName": "Ferrum",
+  "identifier": "de.jbinnovative.ferrum",
+  "app": {
+    "enableGTKAppId": true,
+    "windows": [
+      {
+        "title": "Ferrum",
+        "width": 1240,
+        "height": 720,
+        "minWidth": 640,
+        "minHeight": 320,
+        "resizable": true,
+        "decorations": true,
+        "fullscreen": false
+      }
+    ]
+  },
+  "build": {
+    "frontendDist": "../dist",
+    "devUrl": "http://localhost:8080"
+  },
+  "bundle": {
+    "resources": []
+  },
+  "plugins": {}
+}

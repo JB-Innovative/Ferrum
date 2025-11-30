@@ -78,9 +78,26 @@
       <sourceFolder url="file://$MODULE_DIR$/wgpu/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/widget/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/winit/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/servo/components/background_hang_monitor/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/servo/components/fonts/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/servo/components/hyper_serde/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/servo/components/layout/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/servo/components/net/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/servo/components/pixels/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/servo/components/servo/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/servo/components/servo/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/servo/components/shared/compositing/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/servo/components/shared/net/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/servo/components/storage/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/servo/components/url/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/servo/components/xpath/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/servo/support/rust-task_info/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/servo/third_party/blurmac/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ferrum_desktop/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/ferrum_core/target" />
       <excludeFolder url="file://$MODULE_DIR$/ferrum_shell/target" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
+      <excludeFolder url="file://$MODULE_DIR$/servo/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

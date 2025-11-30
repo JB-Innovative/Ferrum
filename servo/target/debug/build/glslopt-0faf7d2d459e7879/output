@@ -1,0 +1,339 @@
+OUT_DIR = Some(/home/Creativity/RustroverProjects/Ferrum/servo/target/debug/build/glslopt-0faf7d2d459e7879/out)
+OPT_LEVEL = Some(0)
+TARGET = Some(x86_64-unknown-linux-gnu)
+CARGO_ENCODED_RUSTFLAGS = Some()
+HOST = Some(x86_64-unknown-linux-gnu)
+cargo:rerun-if-env-changed=CC_x86_64-unknown-linux-gnu
+CC_x86_64-unknown-linux-gnu = None
+cargo:rerun-if-env-changed=CC_x86_64_unknown_linux_gnu
+CC_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=HOST_CC
+HOST_CC = None
+cargo:rerun-if-env-changed=CC
+CC = None
+cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+RUSTC_WRAPPER = Some(/opt/rustrover-eap/bin/native-helper/intellij-rust-native-helper)
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+DEBUG = Some(false)
+CARGO_CFG_TARGET_FEATURE = Some(fxsr,sse,sse2)
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
+CFLAGS_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
+CFLAGS_x86_64-unknown-linux-gnu = None
+cargo:warning=In file included from glsl-optimizer/src/util/u_queue.h:40,
+cargo:warning=                 from glsl-optimizer/src/mesa/main/glthread.h:48,
+cargo:warning=                 from glsl-optimizer/src/mesa/main/mtypes.h:42,
+cargo:warning=                 from glsl-optimizer/src/compiler/glsl/glcpp/pp_standalone_scaffolding.h:34,
+cargo:warning=                 from glsl-optimizer/src/compiler/glsl/glcpp/pp_standalone_scaffolding.c:30:
+cargo:warning=glsl-optimizer/src/util/macros.h:76:9: warning: 'unreachable' redefined
+cargo:warning=   76 | #define unreachable(str)    \
+cargo:warning=      |         ^~~~~~~~~~~
+cargo:warning=In file included from glsl-optimizer/src/compiler/glsl/glcpp/pp_standalone_scaffolding.h:33:
+cargo:warning=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h:468:9: note: this is the location of the previous definition
+cargo:warning=  468 | #define unreachable() (__builtin_unreachable ())
+cargo:warning=      |         ^~~~~~~~~~~
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+cargo:warning=In file included from glsl-optimizer/src/util/ralloc.h:53,
+cargo:warning=                 from glsl-optimizer/src/util/ralloc.c:37:
+cargo:warning=glsl-optimizer/src/util/macros.h:76:9: warning: 'unreachable' redefined
+cargo:warning=   76 | #define unreachable(str)    \
+cargo:warning=      |         ^~~~~~~~~~~
+cargo:warning=In file included from glsl-optimizer/src/util/ralloc.h:49:
+cargo:warning=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h:468:9: note: this is the location of the previous definition
+cargo:warning=  468 | #define unreachable() (__builtin_unreachable ())
+cargo:warning=      |         ^~~~~~~~~~~
+cargo:warning=In file included from glsl-optimizer/src/util/ralloc.h:53,
+cargo:warning=                 from glsl-optimizer/src/util/string_buffer.h:27,
+cargo:warning=                 from glsl-optimizer/src/util/string_buffer.c:25:
+cargo:warning=glsl-optimizer/src/util/macros.h:76:9: warning: 'unreachable' redefined
+cargo:warning=   76 | #define unreachable(str)    \
+cargo:warning=      |         ^~~~~~~~~~~
+cargo:warning=In file included from glsl-optimizer/src/util/ralloc.h:49:
+cargo:warning=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h:468:9: note: this is the location of the previous definition
+cargo:warning=  468 | #define unreachable() (__builtin_unreachable ())
+cargo:warning=      |         ^~~~~~~~~~~
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+cargo:rerun-if-env-changed=AR_x86_64-unknown-linux-gnu
+AR_x86_64-unknown-linux-gnu = None
+cargo:rerun-if-env-changed=AR_x86_64_unknown_linux_gnu
+AR_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=HOST_AR
+HOST_AR = None
+cargo:rerun-if-env-changed=AR
+AR = None
+cargo:rerun-if-env-changed=ARFLAGS
+ARFLAGS = None
+cargo:rerun-if-env-changed=HOST_ARFLAGS
+HOST_ARFLAGS = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64_unknown_linux_gnu
+ARFLAGS_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64-unknown-linux-gnu
+ARFLAGS_x86_64-unknown-linux-gnu = None
+cargo:rustc-link-lib=static=glcpp
+cargo:rustc-link-search=native=/home/Creativity/RustroverProjects/Ferrum/servo/target/debug/build/glslopt-0faf7d2d459e7879/out
+OUT_DIR = Some(/home/Creativity/RustroverProjects/Ferrum/servo/target/debug/build/glslopt-0faf7d2d459e7879/out)
+OPT_LEVEL = Some(0)
+TARGET = Some(x86_64-unknown-linux-gnu)
+CARGO_ENCODED_RUSTFLAGS = Some()
+HOST = Some(x86_64-unknown-linux-gnu)
+cargo:rerun-if-env-changed=CC_x86_64-unknown-linux-gnu
+CC_x86_64-unknown-linux-gnu = None
+cargo:rerun-if-env-changed=CC_x86_64_unknown_linux_gnu
+CC_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=HOST_CC
+HOST_CC = None
+cargo:rerun-if-env-changed=CC
+CC = None
+cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+RUSTC_WRAPPER = Some(/opt/rustrover-eap/bin/native-helper/intellij-rust-native-helper)
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+DEBUG = Some(false)
+CARGO_CFG_TARGET_FEATURE = Some(fxsr,sse,sse2)
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
+CFLAGS_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
+CFLAGS_x86_64-unknown-linux-gnu = None
+cargo:warning=In file included from glsl-optimizer/src/util/u_queue.h:40,
+cargo:warning=                 from glsl-optimizer/src/mesa/main/glthread.h:48,
+cargo:warning=                 from glsl-optimizer/src/mesa/main/mtypes.h:42,
+cargo:warning=                 from glsl-optimizer/src/mesa/main/extensions.h:39,
+cargo:warning=                 from glsl-optimizer/src/mesa/main/extensions_table.c:26:
+cargo:warning=glsl-optimizer/src/util/macros.h:76:9: warning: 'unreachable' redefined
+cargo:warning=   76 | #define unreachable(str)    \
+cargo:warning=      |         ^~~~~~~~~~~
+cargo:warning=In file included from glsl-optimizer/src/util/list.h:42,
+cargo:warning=                 from glsl-optimizer/src/util/u_queue.h:39:
+cargo:warning=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h:468:9: note: this is the location of the previous definition
+cargo:warning=  468 | #define unreachable() (__builtin_unreachable ())
+cargo:warning=      |         ^~~~~~~~~~~
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+cargo:rerun-if-env-changed=AR_x86_64-unknown-linux-gnu
+AR_x86_64-unknown-linux-gnu = None
+cargo:rerun-if-env-changed=AR_x86_64_unknown_linux_gnu
+AR_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=HOST_AR
+HOST_AR = None
+cargo:rerun-if-env-changed=AR
+AR = None
+cargo:rerun-if-env-changed=ARFLAGS
+ARFLAGS = None
+cargo:rerun-if-env-changed=HOST_ARFLAGS
+HOST_ARFLAGS = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64_unknown_linux_gnu
+ARFLAGS_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64-unknown-linux-gnu
+ARFLAGS_x86_64-unknown-linux-gnu = None
+cargo:rustc-link-lib=static=mesa
+cargo:rustc-link-search=native=/home/Creativity/RustroverProjects/Ferrum/servo/target/debug/build/glslopt-0faf7d2d459e7879/out
+OUT_DIR = Some(/home/Creativity/RustroverProjects/Ferrum/servo/target/debug/build/glslopt-0faf7d2d459e7879/out)
+OPT_LEVEL = Some(0)
+TARGET = Some(x86_64-unknown-linux-gnu)
+CARGO_ENCODED_RUSTFLAGS = Some()
+HOST = Some(x86_64-unknown-linux-gnu)
+cargo:rerun-if-env-changed=CXX_x86_64-unknown-linux-gnu
+CXX_x86_64-unknown-linux-gnu = None
+cargo:rerun-if-env-changed=CXX_x86_64_unknown_linux_gnu
+CXX_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=HOST_CXX
+HOST_CXX = None
+cargo:rerun-if-env-changed=CXX
+CXX = None
+cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+RUSTC_WRAPPER = Some(/opt/rustrover-eap/bin/native-helper/intellij-rust-native-helper)
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+DEBUG = Some(false)
+CARGO_CFG_TARGET_FEATURE = Some(fxsr,sse,sse2)
+cargo:rerun-if-env-changed=CXXFLAGS
+CXXFLAGS = None
+cargo:rerun-if-env-changed=HOST_CXXFLAGS
+HOST_CXXFLAGS = None
+cargo:rerun-if-env-changed=CXXFLAGS_x86_64_unknown_linux_gnu
+CXXFLAGS_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=CXXFLAGS_x86_64-unknown-linux-gnu
+CXXFLAGS_x86_64-unknown-linux-gnu = None
+cargo:warning=glsl-optimizer/src/compiler/glsl/builtin_functions.cpp:87:9: warning: 'M_PIf' redefined
+cargo:warning=   87 | #define M_PIf   ((float) M_PI)
+cargo:warning=      |         ^~~~~
+cargo:warning=In file included from /usr/include/c++/15.2.1/cmath:55,
+cargo:warning=                 from /usr/include/c++/15.2.1/math.h:36,
+cargo:warning=                 from glsl-optimizer/src/compiler/glsl/builtin_functions.cpp:83:
+cargo:warning=/usr/include/math.h:1138:10: note: this is the location of the previous definition
+cargo:warning= 1138 | # define M_PIf          3.14159265358979323846f /* pi */
+cargo:warning=      |          ^~~~~
+cargo:warning=glsl-optimizer/src/compiler/glsl/builtin_functions.cpp:88:9: warning: 'M_PI_2f' redefined
+cargo:warning=   88 | #define M_PI_2f ((float) M_PI_2)
+cargo:warning=      |         ^~~~~~~
+cargo:warning=/usr/include/math.h:1139:10: note: this is the location of the previous definition
+cargo:warning= 1139 | # define M_PI_2f        1.57079632679489661923f /* pi/2 */
+cargo:warning=      |          ^~~~~~~
+cargo:warning=glsl-optimizer/src/compiler/glsl/builtin_functions.cpp:89:9: warning: 'M_PI_4f' redefined
+cargo:warning=   89 | #define M_PI_4f ((float) M_PI_4)
+cargo:warning=      |         ^~~~~~~
+cargo:warning=/usr/include/math.h:1140:10: note: this is the location of the previous definition
+cargo:warning= 1140 | # define M_PI_4f        0.78539816339744830962f /* pi/4 */
+cargo:warning=      |          ^~~~~~~
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+cargo:rerun-if-env-changed=AR_x86_64-unknown-linux-gnu
+AR_x86_64-unknown-linux-gnu = None
+cargo:rerun-if-env-changed=AR_x86_64_unknown_linux_gnu
+AR_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=HOST_AR
+HOST_AR = None
+cargo:rerun-if-env-changed=AR
+AR = None
+cargo:rerun-if-env-changed=ARFLAGS
+ARFLAGS = None
+cargo:rerun-if-env-changed=HOST_ARFLAGS
+HOST_ARFLAGS = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64_unknown_linux_gnu
+ARFLAGS_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64-unknown-linux-gnu
+ARFLAGS_x86_64-unknown-linux-gnu = None
+cargo:rustc-link-lib=static=glsl_optimizer
+cargo:rustc-link-search=native=/home/Creativity/RustroverProjects/Ferrum/servo/target/debug/build/glslopt-0faf7d2d459e7879/out
+cargo:rerun-if-env-changed=CXXSTDLIB_x86_64-unknown-linux-gnu
+CXXSTDLIB_x86_64-unknown-linux-gnu = None
+cargo:rerun-if-env-changed=CXXSTDLIB_x86_64_unknown_linux_gnu
+CXXSTDLIB_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=HOST_CXXSTDLIB
+HOST_CXXSTDLIB = None
+cargo:rerun-if-env-changed=CXXSTDLIB
+CXXSTDLIB = None
+cargo:rustc-link-lib=stdc++

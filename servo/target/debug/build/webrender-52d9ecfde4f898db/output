@@ -1,0 +1,223 @@
+cargo:rerun-if-changed=res
+cargo:rerun-if-changed=res/rect.glsl
+cargo:rerun-if-changed=res/cs_radial_gradient.glsl
+cargo:rerun-if-changed=res/render_task.glsl
+cargo:rerun-if-changed=res/shared_other.glsl
+cargo:rerun-if-changed=res/gpu_cache.glsl
+cargo:rerun-if-changed=res/blend.glsl
+cargo:rerun-if-changed=res/brush_solid.glsl
+cargo:rerun-if-changed=res/prim_shared.glsl
+cargo:rerun-if-changed=res/gradient.glsl
+cargo:rerun-if-changed=res/cs_border_solid.glsl
+cargo:rerun-if-changed=res/brush_yuv_image.glsl
+cargo:rerun-if-changed=res/composite.glsl
+cargo:rerun-if-changed=res/shared.glsl
+cargo:rerun-if-changed=res/cs_svg_filter.glsl
+cargo:rerun-if-changed=res/ps_split_composite.glsl
+cargo:rerun-if-changed=res/cs_scale.glsl
+cargo:rerun-if-changed=res/cs_clip_rectangle.glsl
+cargo:rerun-if-changed=res/clip_shared.glsl
+cargo:rerun-if-changed=res/brush_image.glsl
+cargo:rerun-if-changed=res/cs_svg_filter_node.glsl
+cargo:rerun-if-changed=res/ps_quad_mask.glsl
+cargo:rerun-if-changed=res/cs_linear_gradient.glsl
+cargo:rerun-if-changed=res/dithering.glsl
+cargo:rerun-if-changed=res/ps_quad_gradient.glsl
+cargo:rerun-if-changed=res/ps_quad.glsl
+cargo:rerun-if-changed=res/ps_quad_radial_gradient.glsl
+cargo:rerun-if-changed=res/debug_color.glsl
+cargo:rerun-if-changed=res/ps_quad_textured.glsl
+cargo:rerun-if-changed=res/transform.glsl
+cargo:rerun-if-changed=res/brush_linear_gradient.glsl
+cargo:rerun-if-changed=res/cs_conic_gradient.glsl
+cargo:rerun-if-changed=res/brush.glsl
+cargo:rerun-if-changed=res/gpu_cache_update.glsl
+cargo:rerun-if-changed=res/ps_clear.glsl
+cargo:rerun-if-changed=res/brush_blend.glsl
+cargo:rerun-if-changed=res/cs_clip_box_shadow.glsl
+cargo:rerun-if-changed=res/ps_text_run.glsl
+cargo:rerun-if-changed=res/yuv.glsl
+cargo:rerun-if-changed=res/brush_mix_blend.glsl
+cargo:rerun-if-changed=res/ellipse.glsl
+cargo:rerun-if-changed=res/cs_blur.glsl
+cargo:rerun-if-changed=res/gpu_buffer.glsl
+cargo:rerun-if-changed=res/cs_line_decoration.glsl
+cargo:rerun-if-changed=res/sample_color0.glsl
+cargo:rerun-if-changed=res/brush_opacity.glsl
+cargo:rerun-if-changed=res/ps_quad_conic_gradient.glsl
+cargo:rerun-if-changed=res/debug_font.glsl
+cargo:rerun-if-changed=res/ps_copy.glsl
+cargo:rerun-if-changed=res/base.glsl
+cargo:rerun-if-changed=res/cs_border_segment.glsl
+cargo:rerun-if-changed=res/gradient_shared.glsl
+cargo:rerun-if-changed=res/cs_fast_linear_gradient.glsl
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_solid", config: "ALPHA_PASS", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_solid", config: "DEBUG_OVERDRAW", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "cs_clip_rectangle", config: "", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "cs_radial_gradient", config: "", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "cs_fast_linear_gradient", config: "", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "cs_conic_gradient", config: "", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_solid", config: "", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "cs_clip_box_shadow", config: "TEXTURE_2D", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "debug_font", config: "", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "cs_clip_rectangle", config: "FAST_PATH", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "debug_font", config: "", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "cs_fast_linear_gradient", config: "", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "cs_svg_filter_node", config: "", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "cs_radial_gradient", config: "", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "cs_clip_box_shadow", config: "TEXTURE_2D", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "cs_conic_gradient", config: "", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_opacity", config: "", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_opacity", config: "ANTIALIASING", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_opacity", config: "ALPHA_PASS", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "cs_clip_rectangle", config: "", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_opacity", config: "ALPHA_PASS,ANTIALIASING", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_opacity", config: "ANTIALIASING,DEBUG_OVERDRAW", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_opacity", config: "DEBUG_OVERDRAW", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "cs_clip_rectangle", config: "FAST_PATH", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_solid", config: "ALPHA_PASS", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_solid", config: "DEBUG_OVERDRAW", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "TEXTURE_2D", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ALPHA_PASS,TEXTURE_2D", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "DEBUG_OVERDRAW,TEXTURE_2D", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_solid", config: "", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ANTIALIASING,REPETITION,TEXTURE_2D", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ALPHA_PASS,ANTIALIASING,REPETITION,TEXTURE_2D", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_opacity", config: "", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ANTIALIASING,DEBUG_OVERDRAW,REPETITION,TEXTURE_2D", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_opacity", config: "ALPHA_PASS", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ADVANCED_BLEND,ALPHA_PASS,TEXTURE_2D", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_opacity", config: "ANTIALIASING", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ADVANCED_BLEND,ALPHA_PASS,ANTIALIASING,REPETITION,TEXTURE_2D", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_opacity", config: "ALPHA_PASS,ANTIALIASING", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ALPHA_PASS,DUAL_SOURCE_BLENDING,TEXTURE_2D", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_opacity", config: "ANTIALIASING,DEBUG_OVERDRAW", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ALPHA_PASS,ANTIALIASING,DUAL_SOURCE_BLENDING,REPETITION,TEXTURE_2D", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "TEXTURE_2D", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "TEXTURE_RECT", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ALPHA_PASS,TEXTURE_2D", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ALPHA_PASS,TEXTURE_RECT", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ALPHA_PASS,ANTIALIASING,REPETITION,TEXTURE_2D", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "DEBUG_OVERDRAW,TEXTURE_RECT", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ANTIALIASING,REPETITION,TEXTURE_2D", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ANTIALIASING,REPETITION,TEXTURE_RECT", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_opacity", config: "DEBUG_OVERDRAW", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "DEBUG_OVERDRAW,TEXTURE_2D", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ALPHA_PASS,ANTIALIASING,REPETITION,TEXTURE_RECT", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ANTIALIASING,DEBUG_OVERDRAW,REPETITION,TEXTURE_RECT", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ALPHA_PASS,DUAL_SOURCE_BLENDING,TEXTURE_2D", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ADVANCED_BLEND,ALPHA_PASS,TEXTURE_RECT", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ANTIALIASING,DEBUG_OVERDRAW,REPETITION,TEXTURE_2D", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ADVANCED_BLEND,ALPHA_PASS,ANTIALIASING,REPETITION,TEXTURE_RECT", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "TEXTURE_RECT", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ALPHA_PASS,DUAL_SOURCE_BLENDING,TEXTURE_RECT", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ADVANCED_BLEND,ALPHA_PASS,TEXTURE_2D", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "DEBUG_OVERDRAW,TEXTURE_RECT", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ADVANCED_BLEND,ALPHA_PASS,ANTIALIASING,REPETITION,TEXTURE_2D", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_yuv_image", config: "TEXTURE_2D,YUV", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ALPHA_PASS,ANTIALIASING,DUAL_SOURCE_BLENDING,REPETITION,TEXTURE_RECT", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ALPHA_PASS,TEXTURE_RECT", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_yuv_image", config: "ALPHA_PASS,TEXTURE_2D,YUV", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ANTIALIASING,REPETITION,TEXTURE_RECT", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "cs_svg_filter_node", config: "", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_yuv_image", config: "TEXTURE_RECT,YUV", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_yuv_image", config: "DEBUG_OVERDRAW,TEXTURE_2D,YUV", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ALPHA_PASS,ANTIALIASING,DUAL_SOURCE_BLENDING,REPETITION,TEXTURE_2D", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ALPHA_PASS,ANTIALIASING,REPETITION,TEXTURE_RECT", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ANTIALIASING,DEBUG_OVERDRAW,REPETITION,TEXTURE_RECT", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "cs_scale", config: "TEXTURE_2D", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_yuv_image", config: "ALPHA_PASS,TEXTURE_RECT,YUV", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_yuv_image", config: "DEBUG_OVERDRAW,TEXTURE_RECT,YUV", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "cs_scale", config: "TEXTURE_2D", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "cs_scale", config: "TEXTURE_RECT", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ADVANCED_BLEND,ALPHA_PASS,TEXTURE_RECT", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "cs_scale", config: "TEXTURE_RECT", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "ps_clear", config: "", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "cs_border_segment", config: "", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "ps_quad_gradient", config: "", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "ps_clear", config: "", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_mix_blend", config: "", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ALPHA_PASS,DUAL_SOURCE_BLENDING,TEXTURE_RECT", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_mix_blend", config: "ALPHA_PASS", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_mix_blend", config: "DEBUG_OVERDRAW", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_yuv_image", config: "DEBUG_OVERDRAW,TEXTURE_2D,YUV", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "ps_split_composite", config: "", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ADVANCED_BLEND,ALPHA_PASS,ANTIALIASING,REPETITION,TEXTURE_RECT", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "ps_quad_mask", config: "", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "ps_quad_gradient", config: "", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "ps_quad_mask", config: "FAST_PATH", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_mix_blend", config: "ALPHA_PASS", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_yuv_image", config: "ALPHA_PASS,TEXTURE_2D,YUV", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "cs_blur", config: "ALPHA_TARGET", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "cs_line_decoration", config: "", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_yuv_image", config: "ALPHA_PASS,TEXTURE_RECT,YUV", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "cs_blur", config: "COLOR_TARGET", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_mix_blend", config: "DEBUG_OVERDRAW", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "composite", config: "TEXTURE_2D", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_yuv_image", config: "DEBUG_OVERDRAW,TEXTURE_RECT,YUV", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "composite", config: "TEXTURE_RECT", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "cs_line_decoration", config: "", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "composite", config: "TEXTURE_2D,YUV", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "ps_quad_mask", config: "", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "composite", config: "TEXTURE_RECT,YUV", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_yuv_image", config: "TEXTURE_RECT,YUV", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "ps_split_composite", config: "", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "composite", config: "FAST_PATH,TEXTURE_2D,YUV", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "composite", config: "TEXTURE_2D", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "composite", config: "FAST_PATH,TEXTURE_2D", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "composite", config: "FAST_PATH,TEXTURE_RECT", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "composite", config: "TEXTURE_RECT", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "composite", config: "FAST_PATH,TEXTURE_RECT,YUV", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_yuv_image", config: "TEXTURE_2D,YUV", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_image", config: "ALPHA_PASS,ANTIALIASING,DUAL_SOURCE_BLENDING,REPETITION,TEXTURE_RECT", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "ps_copy", config: "", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "composite", config: "FAST_PATH,TEXTURE_2D", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "debug_color", config: "", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "composite", config: "FAST_PATH,TEXTURE_RECT", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "ps_quad_textured", config: "", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "cs_linear_gradient", config: "", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "cs_border_segment", config: "", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "cs_border_solid", config: "", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "ps_copy", config: "", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "ps_text_run", config: "ALPHA_PASS,TEXTURE_2D", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "debug_color", config: "", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "ps_text_run", config: "ALPHA_PASS,GLYPH_TRANSFORM,TEXTURE_2D", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "ps_quad_mask", config: "FAST_PATH", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "ps_text_run", config: "DEBUG_OVERDRAW,TEXTURE_2D", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "composite", config: "FAST_PATH,TEXTURE_2D,YUV", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "ps_text_run", config: "ALPHA_PASS,DUAL_SOURCE_BLENDING,TEXTURE_2D", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "cs_linear_gradient", config: "", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "ps_text_run", config: "ALPHA_PASS,DUAL_SOURCE_BLENDING,GLYPH_TRANSFORM,TEXTURE_2D", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "cs_border_solid", config: "", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "ps_text_run", config: "DEBUG_OVERDRAW,DUAL_SOURCE_BLENDING,TEXTURE_2D", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_mix_blend", config: "", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "ps_quad_conic_gradient", config: "", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "composite", config: "TEXTURE_RECT,YUV", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "ps_quad_radial_gradient", config: "", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "cs_blur", config: "ALPHA_TARGET", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_blend", config: "", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "composite", config: "FAST_PATH,TEXTURE_RECT,YUV", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_blend", config: "ALPHA_PASS", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "composite", config: "TEXTURE_2D,YUV", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_blend", config: "DEBUG_OVERDRAW", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "ps_quad_textured", config: "", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "cs_blur", config: "COLOR_TARGET", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_linear_gradient", config: "", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_linear_gradient", config: "ALPHA_PASS", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "ps_text_run", config: "ALPHA_PASS,DUAL_SOURCE_BLENDING,TEXTURE_2D", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "brush_linear_gradient", config: "DEBUG_OVERDRAW", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "ps_text_run", config: "ALPHA_PASS,GLYPH_TRANSFORM,TEXTURE_2D", gl_version: Gl }
+Optimizing shader ShaderOptimizationInput { shader_name: "cs_svg_filter", config: "", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "ps_text_run", config: "DEBUG_OVERDRAW,TEXTURE_2D", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "ps_text_run", config: "ALPHA_PASS,DUAL_SOURCE_BLENDING,GLYPH_TRANSFORM,TEXTURE_2D", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "ps_text_run", config: "ALPHA_PASS,TEXTURE_2D", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "ps_text_run", config: "DEBUG_OVERDRAW,DUAL_SOURCE_BLENDING,TEXTURE_2D", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "ps_quad_radial_gradient", config: "", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "ps_quad_conic_gradient", config: "", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_linear_gradient", config: "DEBUG_OVERDRAW", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_blend", config: "DEBUG_OVERDRAW", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_linear_gradient", config: "ALPHA_PASS", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_linear_gradient", config: "", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_blend", config: "", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "brush_blend", config: "ALPHA_PASS", gl_version: Gl }
+Finished optimizing shader ShaderOptimizationInput { shader_name: "cs_svg_filter", config: "", gl_version: Gl }

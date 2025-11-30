@@ -1,0 +1,4 @@
+cargo::rustc-check-cfg=cfg(servo_production)
+cargo::rustc-check-cfg=cfg(servo_do_not_use_in_production)
+cargo:rustc-cfg=servo_do_not_use_in_production
+cargo:rustc-env=GIT_SHA=af5068f
