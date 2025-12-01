@@ -55,16 +55,26 @@ impl BrowserCore {
 pub fn get_dummy_render_buffer() -> Vec<u8> {
     const WIDTH: usize = 640;
     const HEIGHT: usize = 480;
+    const CHANNELS: usize = 3; // RGB
+    let mut buffer = vec![0u8; WIDTH * HEIGHT * CHANNELS];
 
-    // 3 Bytes pro Pixel (RGB)
-    let mut buffer = vec![0u8; WIDTH * HEIGHT * 3];
+    for y in 0..HEIGHT {
+        for x in 0..WIDTH {
+            let index = (y * WIDTH + x) * CHANNELS;
 
-    // Fülle den Puffer mit einem dunklen Grauton (50, 50, 50)
-    for chunk in buffer.chunks_mut(3) {
-        chunk[0] = 50;
-        chunk[1] = 50;
-        chunk[2] = 50;
+            // Einfaches Checkerboard-Muster
+            let (r, g, b) = if (x / 40) % 2 == (y / 40) % 2 {
+                // Farbe 1: Hellblau
+                (50, 50, 255)
+            } else {
+                // Farbe 2: Gelb
+                (255, 255, 0)
+            };
+
+            buffer[index] = r;
+            buffer[index + 1] = g;
+            buffer[index + 2] = b;
+        }
     }
-
     buffer
 }

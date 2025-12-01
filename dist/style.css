@@ -5,6 +5,8 @@ body, html {
     height: 100%;
     overflow: hidden; /* Verhindert Scrollbalken im UI */
     font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 #browser-ui {
